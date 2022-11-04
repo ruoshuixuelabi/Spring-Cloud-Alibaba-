@@ -7,7 +7,7 @@ import com.gupaoedu.springcloud.seata.IAccountService;
 import com.gupaoedu.springcloud.seata.accountprovider.dal.mappers.AccountMapper;
 import io.seata.core.context.RootContext;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -16,7 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * http://www.gupaoedu.com
  **/
 @Slf4j
-@Service
+@DubboService
 public class AccountServiceImpl implements IAccountService{
 
     @Autowired

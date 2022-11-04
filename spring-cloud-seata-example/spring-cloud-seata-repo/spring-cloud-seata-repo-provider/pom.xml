@@ -7,9 +7,9 @@
 		<artifactId>spring-cloud-seata-repo</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>repo-provider</artifactId>
+	<artifactId>spring-cloud-seata-repo-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>repo-provider</name>
+	<name>spring-cloud-seata-repo-provider</name>
 	<description>Demo project for Spring Boot</description>
 	<dependencies>
 		<dependency>

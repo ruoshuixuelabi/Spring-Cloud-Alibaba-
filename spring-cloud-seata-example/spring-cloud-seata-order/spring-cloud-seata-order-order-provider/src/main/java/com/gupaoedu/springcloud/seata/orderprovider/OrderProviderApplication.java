@@ -8,9 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@SpringBootApplication(exclude = GlobalTransactionAutoConfiguration.class)
 @SpringBootApplication()
 public class OrderProviderApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(OrderProviderApplication.class, args);
 	}
-
 }

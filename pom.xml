@@ -8,6 +8,37 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-nacos-discovery</module>
+        <module>order-service</module>
+        <module>user-service</module>
+        <module>springboot-consumer</module>
+        <module>springboot-provider</module>
+        <module>spring-cloud-sentinel-sample</module>
+        <module>spring-cloud-sentinel-dynamic-rule</module>
+        <module>spring-cloud-sentinel-dubbo-provider</module>
+        <module>spring-cloud-sentinel-dubbo-consumer</module>
+        <module>spring-cloud-seata-example/spring-cloud-seata-account</module>
+        <module>spring-cloud-seata-example/spring-cloud-seata-order</module>
+        <module>spring-cloud-seata-example/spring-cloud-seata-repo</module>
+        <module>spring-cloud-seata-example/spring-cloud-seata-rest</module>
+        <module>spring-cloud-rocketmq</module>
+        <module>spring-cloud-nacos-sample</module>
+        <module>spring-cloud-nacos-gateway-provider</module>
+        <module>spring-cloud-nacos-gateway-consumer</module>
+        <module>spring-cloud-nacos-consumer</module>
+        <module>spring-cloud-nacos-config</module>
+        <module>spring-cloud-gateway-service</module>
+        <module>spring-cloud-gateway-sample</module>
+        <module>spring-cloud-dubbo-sample</module>
+        <module>spring-cloud-dubbo-consumer</module>
+        <module>spring-boot-dubbo-nacos-sample</module>
+        <module>spring-boot-conditional</module>
+        <module>sentinel-dashboard</module>
+        <module>redis-spring-boot-starter</module>
+        <module>seata-sample/sample-account-service</module>
+        <module>seata-sample/sample-order-service</module>
+        <module>seata-sample/sample-repo-service</module>
+        <module>seata-sample/sample-rest-web</module>
+        <module>seata-sample/sample-seata-common</module>
     </modules>
     <!--统一管理-->
     <properties>

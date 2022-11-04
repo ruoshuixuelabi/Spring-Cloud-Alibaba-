@@ -18,4 +18,20 @@ public class OrderDto implements Serializable{
     private String productCode;
     private Integer orderCount;
     private BigDecimal orderAmount;
+
+    public BigDecimal getOrderAmount() {
+        return orderAmount;
+    }
+
+    public void setOrderAmount(BigDecimal orderAmount) {
+        this.orderAmount = orderAmount;
+    }
+
+    public void setOrderCount(Integer orderCount) {
+        this.orderCount = orderCount;
+    }
+
+    public Integer getOrderCount() {
+        return orderCount;
+    }
 }
