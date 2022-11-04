@@ -10,8 +10,8 @@ import com.gupaoedu.springcloud.seata.IRepoService;
 import io.seata.core.context.RootContext;
 import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Reference;
-import org.springframework.stereotype.Service;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.DubboService;
 
 /**
  * @Author: heshouyou
@@ -19,11 +19,11 @@ import org.springframework.stereotype.Service;
  * @Date Created in 2019/1/14 18:36
  */
 @Slf4j
-@Service
+@DubboService
 public class RestOrderServiceImpl implements IRestOrderService {
-    @Reference
+    @DubboReference
     IRepoService repoService;
-    @Reference
+    @DubboReference
     IOrderService orderService;
 
     @Override

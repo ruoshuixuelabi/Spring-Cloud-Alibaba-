@@ -18,10 +18,10 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.gupaoedu.book.spi</groupId>
-            <artifactId>Mysql-Driver</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.gupaoedu.book.spi</groupId>-->
+<!--            <artifactId>Mysql-Driver</artifactId>-->
+<!--            <version>1.0-SNAPSHOT</version>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

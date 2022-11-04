@@ -2,7 +2,6 @@ package com.gupaoedu.book.dubbo.springbootconsumer;
 
 import com.gupaoedu.book.dubbo.IHelloService;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

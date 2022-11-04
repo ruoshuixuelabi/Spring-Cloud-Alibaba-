@@ -11,8 +11,8 @@ import com.gupaoedu.springcloud.seata.orderprovider.dal.entitys.Order;
 import com.gupaoedu.springcloud.seata.orderprovider.dal.mappers.OrderMapper;
 import io.seata.core.context.RootContext;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Reference;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.UUID;
@@ -23,14 +23,14 @@ import java.util.UUID;
  * http://www.gupaoedu.com
  **/
 @Slf4j
-@Service
+@DubboService
 public class OrderServiceImpl implements IOrderService{
 
     @Autowired
     OrderMapper orderMapper;
     @Autowired
     OrderConvert orderConvert;
-    @Reference
+    @DubboReference
     IAccountService accountService;
     @Override
     public ObjectResponse<OrderDto> createOrder(OrderDto orderDto) {

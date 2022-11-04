@@ -13,10 +13,9 @@ import org.mapstruct.Mappings;
  **/
 @Mapper(componentModel = "spring")
 public interface OrderConvert {
-
     @Mappings({
-        @Mapping(source = "orderCount",target = "count"),
-        @Mapping(source = "orderAmount",target = "amount")
+            @Mapping(source = "orderCount", target = "count"),
+            @Mapping(source = "orderAmount", target = "amount")
     })
     Order dto2Order(OrderDto orderDto);
 }

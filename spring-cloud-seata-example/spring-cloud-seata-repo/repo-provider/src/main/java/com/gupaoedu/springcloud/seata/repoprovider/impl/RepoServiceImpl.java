@@ -6,7 +6,7 @@ import com.gupaoedu.seata.common.response.ObjectResponse;
 import com.gupaoedu.springcloud.seata.IRepoService;
 import com.gupaoedu.springcloud.seata.repoprovider.dal.mappers.RepoMapper;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * http://www.gupaoedu.com
  **/
 @Slf4j
-@Service
+@DubboService
 public class RepoServiceImpl implements IRepoService{
     @Autowired
     RepoMapper repoMapper;

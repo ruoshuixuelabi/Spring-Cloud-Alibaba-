@@ -1,8 +1,8 @@
 package com.gupaoedu.springcloud.seata.springcloudseatarest.config;
 
-import com.alibaba.cloud.seata.SeataProperties;
+import io.seata.common.util.StringUtils;
 import io.seata.spring.annotation.GlobalTransactionScanner;
-import org.apache.commons.lang3.StringUtils;
+import io.seata.spring.boot.autoconfigure.properties.SeataProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;

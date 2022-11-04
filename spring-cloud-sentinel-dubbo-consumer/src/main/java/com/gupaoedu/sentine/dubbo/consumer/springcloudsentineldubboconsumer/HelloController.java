@@ -1,7 +1,7 @@
 package com.gupaoedu.sentine.dubbo.consumer.springcloudsentineldubboconsumer;
 
 import com.gupaoedu.sentinel.dubbo.IHelloService;
-import org.apache.dubbo.config.annotation.Reference;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Reference
+    @DubboReference
     IHelloService helloService;
 
     @GetMapping("/hello")

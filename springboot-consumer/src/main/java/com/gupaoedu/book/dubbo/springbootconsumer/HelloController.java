@@ -2,7 +2,6 @@ package com.gupaoedu.book.dubbo.springbootconsumer;
 
 import com.gupaoedu.book.dubbo.IHelloService;
 import org.apache.dubbo.config.annotation.DubboReference;
-import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
