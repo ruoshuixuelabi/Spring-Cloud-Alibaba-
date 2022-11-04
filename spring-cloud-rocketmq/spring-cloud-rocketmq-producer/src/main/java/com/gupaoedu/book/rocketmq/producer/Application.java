@@ -15,18 +15,17 @@ import javax.annotation.PostConstruct;
  */
 @SpringBootApplication
 public class Application {
-
     @Autowired
     private RocketMQTemplate rocketMQTemplate;
 
     @PostConstruct
     private void init() {
         String msg = "Hello RocketMQ";
-        MessageBuilder builder = MessageBuilder.withPayload(msg)
+        MessageBuilder<String> builder = MessageBuilder.withPayload(msg)
                 .setHeader(RocketMQHeaders.TAGS, "binder")
                 .setHeader(RocketMQHeaders.KEYS, "my-key")
                 .setHeader("DELAY", "5");
-        Message message = builder.build();
+        Message<String> message = builder.build();
         rocketMQTemplate.send("TopicTest", message);
     }
 

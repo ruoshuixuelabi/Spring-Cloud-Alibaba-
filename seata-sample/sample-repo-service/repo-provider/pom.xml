@@ -7,15 +7,10 @@
 		<artifactId>sample-repo-service</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>com.gupaoedu.seata.repo</groupId>
 	<artifactId>repo-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>repo-provider</name>
 	<description>Demo project for Spring Boot</description>
-
-	<properties>
-		<java.version>1.8</java.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -29,29 +24,15 @@
 		<dependency>
 			<groupId>com.alibaba.boot</groupId>
 			<artifactId>nacos-discovery-spring-boot-starter</artifactId>
-			<version>0.2.4</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.alibaba.spring</groupId>
-					<artifactId>spring-context-support</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-spring-boot-starter</artifactId>
-			<version>2.7.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -67,12 +48,10 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
-			<version>8.0.19</version>
 		</dependency>
 		<dependency>
 			<groupId>io.seata</groupId>
 			<artifactId>seata-spring-boot-starter</artifactId>
-			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 	<build>

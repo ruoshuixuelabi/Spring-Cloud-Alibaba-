@@ -1,10 +1,10 @@
 package com.gupaoedu.springcloud.seata.repoprovider.config;
 
-import com.alibaba.cloud.seata.SeataProperties;
 import com.alibaba.druid.pool.DruidDataSource;
+import io.seata.common.util.StringUtils;
 import io.seata.rm.datasource.DataSourceProxy;
 import io.seata.spring.annotation.GlobalTransactionScanner;
-import org.apache.commons.lang3.StringUtils;
+import io.seata.spring.boot.autoconfigure.properties.SeataProperties;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.transaction.SpringManagedTransactionFactory;

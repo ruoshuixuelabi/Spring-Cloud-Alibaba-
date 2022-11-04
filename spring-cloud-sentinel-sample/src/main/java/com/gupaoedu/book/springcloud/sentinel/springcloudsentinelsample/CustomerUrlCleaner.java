@@ -1,6 +1,6 @@
 package com.gupaoedu.book.springcloud.sentinel.springcloudsentinelsample;
 
-import com.alibaba.csp.sentinel.adapter.servlet.callback.UrlCleaner;
+import com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.UrlCleaner;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -10,7 +10,7 @@ import org.springframework.util.StringUtils;
  * http://www.gupaoedu.com
  **/
 @Service
-public class CustomerUrlCleaner implements UrlCleaner{
+public class CustomerUrlCleaner implements UrlCleaner {
     @Override
     public String clean(String originUrl) {
         if(StringUtils.isEmpty(originUrl)){

@@ -10,9 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
  **/
 @RestController
 public class NacosController {
-
     @GetMapping("/say")
-    public String sayHello(){
+    public String sayHello() {
         return "[spring-cloud-nacos-gatewayh-provider]:sayHello";
     }
 }

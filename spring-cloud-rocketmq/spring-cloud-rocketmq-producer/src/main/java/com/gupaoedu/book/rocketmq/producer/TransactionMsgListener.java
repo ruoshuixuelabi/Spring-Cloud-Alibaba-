@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
  * @author juede.tcever
  */
 @Component
-@RocketMQTransactionListener(txProducerGroup = "OrderTransactionGroup")
+//@RocketMQTransactionListener(txProducerGroup = "OrderTransactionGroup")
+@RocketMQTransactionListener()
 public class TransactionMsgListener implements RocketMQLocalTransactionListener {
 
     @Override

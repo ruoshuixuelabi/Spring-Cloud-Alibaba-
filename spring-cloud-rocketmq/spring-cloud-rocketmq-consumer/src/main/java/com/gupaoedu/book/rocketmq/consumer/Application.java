@@ -9,10 +9,9 @@ import org.springframework.cloud.stream.messaging.Sink;
 /**
  * @author juede.tcever
  */
-@EnableBinding({ Sink.class, InputChannel.class})
+@EnableBinding({Sink.class, InputChannel.class})
 @SpringBootApplication
 public class Application {
-
     @StreamListener(value = InputChannel.ORDER_INPUT)
     public void receive(String receiveMsg) {
         System.out.println("receive: " + receiveMsg);

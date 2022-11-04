@@ -1,6 +1,7 @@
 package com.gupaoedu.seata.common.response;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.io.Serializable;
 
@@ -10,8 +11,7 @@ import java.io.Serializable;
  * http://www.gupaoedu.com
  **/
 @Data
+@EqualsAndHashCode(callSuper=false)
 public class ObjectResponse<T> extends AbstractResonse implements Serializable {
-
     private T data;
-
 }

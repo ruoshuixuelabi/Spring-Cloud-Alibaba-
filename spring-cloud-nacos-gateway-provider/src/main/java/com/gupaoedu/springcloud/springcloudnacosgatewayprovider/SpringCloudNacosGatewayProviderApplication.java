@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringCloudNacosGatewayProviderApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudNacosGatewayProviderApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(SpringCloudNacosGatewayProviderApplication.class, args);
+    }
 }

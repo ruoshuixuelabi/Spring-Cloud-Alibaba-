@@ -1,6 +1,7 @@
 package com.gupaoedu.book.springcloud.springclouddubboconsumer;
 
 import com.gupaoedu.book.springcloud.IHelloService;
+import org.apache.dubbo.config.annotation.DubboReference;
 import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,13 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
-
-    @Reference(mock = "com.gupaoedu.book.springcloud.springclouddubboconsumer.MockHelloService",
+    @DubboReference(mock = "com.gupaoedu.book.springcloud.springclouddubboconsumer.MockHelloService",
             cluster = "failfast")
     private IHelloService iHelloService;
 
     @GetMapping("/say")
-    public String sayHello(){
+    public String sayHello() {
         return iHelloService.sayHello("Mic");
     }
 }

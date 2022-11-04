@@ -1,10 +1,11 @@
 package com.gupaoedu.book.dubbo;
 
-import static org.junit.Assert.assertTrue;
 
 import com.gupaoedu.book.dubbo.spi.Driver;
 import org.apache.dubbo.common.extension.ExtensionLoader;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
  * Unit test for simple App.

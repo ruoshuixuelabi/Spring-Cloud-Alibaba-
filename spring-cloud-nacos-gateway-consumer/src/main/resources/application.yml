@@ -14,9 +14,9 @@ spring:
         - id: nacos-gateway-provider
           uri: lb://spring-cloud-nacos-gateway-provider
           predicates:
-           - Path=/nacos/**
+            - Path=/nacos/**
           filters:
-           - StripPrefix=1
+            - StripPrefix=1
 server:
   port: 8888
 management:

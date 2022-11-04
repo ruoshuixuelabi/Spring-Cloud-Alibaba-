@@ -1,7 +1,7 @@
 package com.gupaoedu.book.dubbo.provider;
 
 import com.gupaoedu.book.dubbo.IHelloService;
-import org.apache.dubbo.config.annotation.Service;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.beans.factory.annotation.Value;
 
 /**
@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Value;
  * 风骚的Mic 老师
  * create-date: 2020/1/6-15:21
  */
-@Service
+@DubboService
 public class HelloServiceImpl implements IHelloService {
     @Value("${dubbo.application.name}")
     private String serviceName;

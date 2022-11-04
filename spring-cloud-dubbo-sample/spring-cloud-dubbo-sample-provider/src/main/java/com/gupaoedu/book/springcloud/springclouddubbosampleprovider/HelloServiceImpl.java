@@ -1,6 +1,7 @@
 package com.gupaoedu.book.springcloud.springclouddubbosampleprovider;
 
 import com.gupaoedu.book.springcloud.IHelloService;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -10,13 +11,13 @@ import org.springframework.beans.factory.annotation.Value;
  * 风骚的Mic 老师
  * create-date: 2020/1/7-14:00
  */
-@Service
+@DubboService(  cluster = "failfast")
 public class HelloServiceImpl implements IHelloService {
     @Value("${dubbo.application.name}")
     private String serviceName;
 
     @Override
     public String sayHello(String name) {
-        return String.format("[%s]：Hello,%s",serviceName,name);
+        return String.format("[%s]：Hello,%s", serviceName, name);
     }
 }

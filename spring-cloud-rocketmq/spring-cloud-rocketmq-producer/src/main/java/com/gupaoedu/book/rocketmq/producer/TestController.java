@@ -74,8 +74,9 @@ public class TestController {
         String transactionId = UUID.randomUUID().toString();
         MessageBuilder builder = MessageBuilder.withPayload(order).setHeader(RocketMQHeaders.TRANSACTION_ID, transactionId);
         Message message = builder.build();
-
-        TransactionSendResult sendResult = rocketMQTemplate.sendMessageInTransaction("OrderTransactionGroup", "TopicOrder", message, order.getOrderId());
+//        TransactionSendResult sendResult = rocketMQTemplate.sendMessageInTransaction("OrderTransactionGroup", "TopicOrder", message, order.getOrderId());
+        TransactionSendResult sendResult = rocketMQTemplate
+                .sendMessageInTransaction("OrderTransactionGroup", message, order.getOrderId());
         return sendResult.getMsgId();
     }
 }

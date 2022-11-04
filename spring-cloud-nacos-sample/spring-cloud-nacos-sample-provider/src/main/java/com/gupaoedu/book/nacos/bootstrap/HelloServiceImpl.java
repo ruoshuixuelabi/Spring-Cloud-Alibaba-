@@ -1,6 +1,7 @@
 package com.gupaoedu.book.nacos.bootstrap;
 
 import com.gupaoedu.book.nacos.IHelloService;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.config.annotation.Service;
 
 /**
@@ -9,7 +10,7 @@ import org.apache.dubbo.config.annotation.Service;
  * 风骚的Mic 老师
  * create-date: 2020/1/11-2:10
  */
-@Service
+@DubboService
 public class HelloServiceImpl implements IHelloService {
 
     @Override
