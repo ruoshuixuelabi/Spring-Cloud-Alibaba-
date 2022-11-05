@@ -7,9 +7,9 @@
 		<artifactId>spring-cloud-seata-account</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>account-provider</artifactId>
+	<artifactId>spring-cloud-seata-account-provider</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>account-provider</name>
+	<name>spring-cloud-seata-account-provider</name>
 	<description>Demo project for Spring Boot</description>
 	<dependencies>
 		<dependency>
@@ -18,7 +18,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.gupaoedu.springcloud.seata</groupId>
-			<artifactId>account-api</artifactId>
+			<artifactId>spring-cloud-seata-account-api</artifactId>
 			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>

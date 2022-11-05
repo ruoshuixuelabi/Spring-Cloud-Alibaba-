@@ -13,8 +13,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>repo-api</module>
-        <module>repo-provider</module>
+        <module>spring-cloud-seata-repo-api</module>
+        <module>spring-cloud-seata-repo-provider</module>
     </modules>
     <name>spring-cloud-seata-repo</name>
 </project>

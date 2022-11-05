@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>order-api</module>
-        <module>order-provider</module>
+        <module>spring-cloud-seata-order-api</module>
+        <module>spring-cloud-seata-order-order-provider</module>
     </modules>
     <name>spring-cloud-seata-order</name>
 </project>
