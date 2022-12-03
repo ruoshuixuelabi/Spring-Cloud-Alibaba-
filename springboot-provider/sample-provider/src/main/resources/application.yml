@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: springboot-provider
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: zk-registry
+    address: N/A
+  config-center:
+    address: N/A
+  metadata-report:
+    address: N/A
